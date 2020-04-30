@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3369d3e4-2083-4c3e-91b6-a8560f923aae" name="Default Changelist" comment="first commit1">
-      <change afterPath="$PROJECT_DIR$/html/advertmanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/trackmanager.html" afterDir="false" />
+    <list default="true" id="3369d3e4-2083-4c3e-91b6-a8560f923aae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/trackmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/trackmanager.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1588160366325" duration="2926000" />
       <workItem from="1588173481505" duration="1082000" />
       <workItem from="1588201706479" duration="191000" />
-      <workItem from="1588210945195" duration="4812000" />
+      <workItem from="1588210945195" duration="8514000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1557482738453</created>
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588213335612</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="first commit2">
+      <created>1588219256294</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588219256294</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,13 +313,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="first commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit1" />
+    <MESSAGE value="first commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="489" y="33" key="CommitChangelistDialog2" timestamp="1588213334629">
+    <state x="489" y="33" key="CommitChangelistDialog2" timestamp="1588219255450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="489" y="33" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588213334629" />
+    <state x="489" y="33" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588219255450" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588213186013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -322,10 +329,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="63" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588213271064" />
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1588213370344">
+    <state x="613" y="187" width="675" height="655" key="StructurePopup" timestamp="1588238537695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588213370344" />
+    <state x="613" y="187" width="675" height="655" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588238537694" />
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1588219261796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588219261796" />
     <state x="574" y="184" width="771" height="672" key="find.popup" timestamp="1588212855746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
