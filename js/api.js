@@ -9,15 +9,35 @@ layui.define(function (exports) {
             all: bossUrl + '/advert/manager/all',
             add: bossUrl + '/advert/manager/add',
             delete: bossUrl + '/advert/manager/delete',
-            remove: bossUrl + '/boss/SceneService/remove',
-            update: bossUrl + '/boss/SceneService/update',
+            update: bossUrl + '/advert/manager/update',
+
             enable: bossUrl + '/boss/SceneService/enable',
             disable: bossUrl + '/boss/SceneService/disable',
             displaySql: bossUrl + '/boss/SceneService/displaySql',
             listData: bossUrl + '/boss/SceneService/listData',
             getDetailData: bossUrl + '/boss/SceneService/getDetailData',
         },
-
+        advertDetail:{
+            all: bossUrl + '/advert/all',
+            add: bossUrl + '/advert/add',
+            delete: bossUrl + '/advert/delete',
+            update: bossUrl + '/advert/update',
+            upload: bossUrl + '/advert/image',
+        },
+        //线索管理
+        trackmanager:{
+            all: bossUrl + '/track/manager/all',
+            add: bossUrl + '/track/manager/add',
+            delete: bossUrl + '/track/manager/delete',
+            update: bossUrl + '/track/manager/update',
+        },
+        //校区管理
+        schoolmanager:{
+            all: bossUrl + '/school/all',
+            add: bossUrl + '/school/add',
+            delete: bossUrl + '/school/delete',
+            update: bossUrl + '/school/update',
+        }
     });
 
     /**
