@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3369d3e4-2083-4c3e-91b6-a8560f923aae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/advertmanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/schoolmanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/schoolpicmanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/trackmanager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/contentmanager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/honormanager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/teachermanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/advert.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/advert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/advertmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/advertmanager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/schoolpicmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/schoolpicmanager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/trackmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/trackmanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui/lib/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/lib/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui/lib/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/lib/view.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+            <state relative-caret-position="181">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -57,28 +54,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/multi_image_upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/advert.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="302" column="28" selection-start-line="302" selection-start-column="22" selection-end-line="302" selection-end-column="28" />
+            <state relative-caret-position="145">
+              <caret line="219" column="33" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -87,35 +66,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/schoolmanager.html">
+        <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="279" column="38" lean-forward="true" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="38" />
+            <state relative-caret-position="304">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/honormanager.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
+        <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+            <state relative-caret-position="167">
+              <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/index.js">
+        <entry file="file://$PROJECT_DIR$/html/contentmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1507" />
+            <state relative-caret-position="191">
+              <caret line="253" column="41" selection-start-line="253" selection-start-column="41" selection-end-line="253" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
+        <entry file="file://$PROJECT_DIR$/html/teachermanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="261" column="31" lean-forward="true" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="31" />
+            <state relative-caret-position="243">
+              <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
               </folding>
@@ -126,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layui/lay/modules/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="1520">
+              <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -135,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="158">
+              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -153,36 +161,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test6</find>
-      <find>form.on('submit(demo1)', function(data){</find>
-      <find>submitadvertmanager</find>
-      <find>item</find>
-      <find>endDate</find>
-      <find>startDate</find>
-      <find>test1</find>
-      <find>demo1</find>
-      <find>提交</find>
-      <find>testevent</find>
-      <find>添加</find>
-      <find>barDemo</find>
+      <find>schoolPicmanager</find>
+      <find>admin</find>
+      <find>picUrls</find>
+      <find>postpicurl</find>
+      <find>upload</find>
+      <find>upload($('#file')[0].files[0]);</find>
+      <find>layui-hide</find>
+      <find>table</find>
       <find>test</find>
-      <find>toolbarDemo</find>
+      <find>advertDetail</find>
+      <find>文章描述</find>
+      <find>laydate</find>
+      <find>submitadvertmanager</find>
+      <find>layui-btn</find>
       <find>addItem</find>
-      <find>table.on('toolbar(testevent)</find>
-      <find>form.on('submit(demo1)', function(data){</find>
-      <find>api.schoolmanager</find>
-      <find>编辑</find>
-      <find>edit</find>
-      <find>btn_upload</find>
-      <find>uploadDialog</find>
+      <find>areatext</find>
+      <find>picUrl</find>
+      <find>uploadId</find>
+      <find>uploadImgId</find>
+      <find>PicurlTpl</find>
       <find>argSchemaTemplate</find>
-      <find>function openlayer(data) {</find>
-      <find>laytpl</find>
-      <find>upload-image-list</find>
+      <find>updateItem</find>
+      <find>添加</find>
+      <find>编辑</find>
+      <find>add</find>
+      <find>barDemo</find>
+      <find>detail</find>
+      <find>open</find>
+      <find>if (data.field.id</find>
       <find>openlayer</find>
-      <find>onFileUpload</find>
-      <find>files</find>
-      <find>addDivHtml</find>
     </findStrings>
     <replaceStrings>
       <replace>19892000</replace>
@@ -196,14 +204,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/layui/lay/modules/table.js" />
-        <option value="$PROJECT_DIR$/html/advert.html" />
         <option value="$PROJECT_DIR$/layui/lay/modules/upload.js" />
-        <option value="$PROJECT_DIR$/html/advertmanager.html" />
-        <option value="$PROJECT_DIR$/html/trackmanager.html" />
+        <option value="$PROJECT_DIR$/html/schoolmanager.html" />
+        <option value="$PROJECT_DIR$/html/honormanager.html" />
         <option value="$PROJECT_DIR$/js/api.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/html/schoolmanager.html" />
         <option value="$PROJECT_DIR$/html/schoolpicmanager.html" />
+        <option value="$PROJECT_DIR$/html/advert.html" />
+        <option value="$PROJECT_DIR$/html/trackmanager.html" />
+        <option value="$PROJECT_DIR$/html/teachermanager.html" />
+        <option value="$PROJECT_DIR$/html/contentmanager.html" />
+        <option value="$PROJECT_DIR$/html/advertmanager.html" />
       </list>
     </option>
   </component>
@@ -244,36 +255,6 @@
               <item name="layuiAdmin" type="462c0819:PsiDirectoryNode" />
               <item name="layui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="layuiAdmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="layuiAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="layuiAdmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="layuiAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="layuiAdmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="layuiAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="layer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="layuiAdmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="layuiAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="layer" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -299,15 +280,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project\layuiAdmin\html" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\project\layuiAdmin\html" />
       <recent name="F:\project\layuiAdmin\layui" />
       <recent name="F:\project\layuiAdmin\js" />
       <recent name="F:\project\layuiAdmin" />
       <recent name="C:\Users\window\Desktop\layuiAdmin\image" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\project\layuiAdmin\html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,7 +346,16 @@
       <workItem from="1588160366325" duration="2926000" />
       <workItem from="1588173481505" duration="1082000" />
       <workItem from="1588201706479" duration="191000" />
-      <workItem from="1588373617520" duration="17202000" />
+      <workItem from="1588373617520" duration="18362000" />
+      <workItem from="1588461191901" duration="746000" />
+      <workItem from="1588509867618" duration="4722000" />
+      <workItem from="1588561610693" duration="4443000" />
+      <workItem from="1588686588236" duration="4052000" />
+      <workItem from="1588774377924" duration="2555000" />
+      <workItem from="1588860767572" duration="1468000" />
+      <workItem from="1588862760207" duration="1510000" />
+      <workItem from="1588943683314" duration="5846000" />
+      <workItem from="1589031441122" duration="6752000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1557482738453</created>
@@ -542,17 +532,31 @@
       <option name="project" value="LOCAL" />
       <updated>1563765670150</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Merge branch 'master' of https://github.com/whywuzeng/layuiAdmin&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1588428285267</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588428285267</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge branch 'master' of https://github.com/whywuzeng/layuiAdmin&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1588428303365</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588428303365</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55509000" />
+    <option name="totallyTimeSpent" value="88763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59692895" visible="true" weight="0.31039137" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59692895" visible="true" weight="0.3616734" />
       <window_info id="Structure" order="1" sideWeight="0.40307102" side_tool="true" weight="0.25775978" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -561,19 +565,19 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.48932928" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.28658536" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932525" weight="0.36432928" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34756097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.16615854" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18597561" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006748" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932525" weight="0.25762194" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3292683" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.4496951" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.23628049" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3292683" />
       <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.27896342" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.3109756" />
@@ -634,7 +638,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/whywuzeng/layuiAdmin&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/whywuzeng/layuiAdmin&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="111" key="CommitChangelistDialog2" timestamp="1577686447325">
@@ -718,90 +723,119 @@
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/layui/lay/modules/upload.js">
+    <entry file="file://$PROJECT_DIR$/html/multi_image_upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="532">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="570">
           <caret line="30" column="56" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/schoolmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5301">
+          <caret line="279" column="38" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1507" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
+    <entry file="file://$PROJECT_DIR$/layui/lay/modules/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="304" column="30" selection-start-line="304" selection-start-column="21" selection-end-line="304" selection-end-column="30" />
-          <folding>
-            <element signature="n#form#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="261" column="31" lean-forward="true" selection-start-line="261" selection-start-column="14" selection-end-line="261" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1520">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        <state relative-caret-position="181">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/honormanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/teachermanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/contentmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="253" column="41" selection-start-line="253" selection-start-column="41" selection-end-line="253" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/advert.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="302" column="28" selection-start-line="302" selection-start-column="22" selection-end-line="302" selection-end-column="28" />
+        <state relative-caret-position="145">
+          <caret line="219" column="33" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/schoolmanager.html">
+    <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="279" column="38" lean-forward="true" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/multi_image_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="167">
+          <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

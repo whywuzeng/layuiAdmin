@@ -37,7 +37,33 @@ layui.define(function (exports) {
             add: bossUrl + '/school/add',
             delete: bossUrl + '/school/delete',
             update: bossUrl + '/school/update',
-        }
+        },//校区图片管理
+        schoolPicmanager:{
+            all: bossUrl + '/schoolPic/all',
+            add: bossUrl + '/schoolPic/add',
+            delete: bossUrl + '/schoolPic/delete',
+            update: bossUrl + '/schoolPic/update',
+        },
+        //教师力量
+        teachermanager:{
+            all: bossUrl + '/teacher/all',
+            add: bossUrl + '/teacher/add',
+            delete: bossUrl + '/teacher/delete',
+            update: bossUrl + '/teacher/update',
+        },
+        //荣耀管理
+        honormanager:{
+            all: bossUrl + '/honor/all',
+            add: bossUrl + '/honor/add',
+            delete: bossUrl + '/honor/delete',
+            update: bossUrl + '/honor/update',
+        },
+        contentmanager:{
+            all: bossUrl + '/content/manager/all',
+            add: bossUrl + '/content/manager/add',
+            delete: bossUrl + '/content/manager/delete',
+            update: bossUrl + '/content/manager/update',
+        },
     });
 
     /**

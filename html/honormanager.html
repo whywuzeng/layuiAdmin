@@ -76,7 +76,7 @@
                 <div class="layui-upload">
                     <button type="button" class="layui-btn" id="uploadId">上传图片</button>
                     <div class="layui-upload-list">
-                        <img class="layui-upload-img" id="uploadImgId" src="{{d.picUrl}}">
+                        <img class="layui-upload-img" id="uploadImgId" src="{{d.pic}}">
                         <p id="demoText"></p>
                     </div>
                 </div>
@@ -84,8 +84,10 @@
                  <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">提交</button>
             </div>
         </form>
-
     </script>
+    <script type="text/html" id="PicurlTpl">
+        <img class="layui-upload-img" id="uploadImgId21" src="{{d.pic}}">
+   </script>
     <script type="text/javascript">
         var files=[];
         var postpicurl ='';
@@ -112,8 +114,8 @@
 
             table.render({
                 elem: '#test'
-                ,url:api.schoolPicmanager.all
-                ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+                ,url:api.honormanager.all
+                ,cellMinWidth: 200 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
                 ,toolbar: '#toolbarDemo' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
                 ,page:false
                 ,contentType:"application/json"
@@ -141,9 +143,10 @@
                     }
                 ,cols: [[
                     {type: 'checkbox', fixed: 'left'}
-                    ,{field:'picUrl', width:120, title: '预览图片'}
-                    ,{field:'picUrl', width:120, title: '图片链接'}
-                    ,{field: 'sortNumber', title: '排序', width:120}
+                    ,{field:'id', width:120, title: 'ID'}
+                    ,{field:'pic', width:120, title: '预览图片',templet: '#PicurlTpl'}
+                    ,{field:'pic', width:200, title: '图片链接'}
+                    ,{field: 'sortNumber', title: '排序', width:200}
                     ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
                 ]]
                 , where: where
@@ -177,7 +180,7 @@
             }
             function addItem(data) {
                 admin.req({
-                    url: api.schoolPicmanager.add,
+                    url: api.honormanager.add,
                     data: data,
                     async: false,
                     success: function (res) {
@@ -192,7 +195,7 @@
 
             function updateItem(data) {
                 admin.req({
-                    url: api.schoolPicmanager.update,
+                    url: api.honormanager.update,
                     data: data,
                     async: false,
                     success: function (res) {
@@ -239,7 +242,6 @@
                                     var objectPost={
                                     }
                                     files.forEach(value => {
-                                        objectPost.schoolId="1";
                                         objectPost.picUrl=value.url;
                                     });
                                     picUrls.push(objectPost);
@@ -342,7 +344,7 @@
                                      }
                                      //上传成功
                                      $('#picUrl').val(res.data);
-                                     data.picUrl = res.data;
+                                     data.pic = res.data;
                                      updateItem(data)
                                  }
                                  ,error: function(){
@@ -360,12 +362,44 @@
             }
 
             /**
+             * 上传图片
+             */
+            function uploadFn(picdata) {
+                var formData = new FormData();
+                formData.append('file', picdata);
+                $.ajax({
+                    url:postpicurl,
+                    type:"post",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(data) {
+                        if (data.code == 0) {
+                            // $("#preview_photo").attr("src", data.filepath+data.filename);
+                            // $("#productImg").val(data.filename);
+                            picdata.url =  data.data;
+                            console.log(JSON.stringify(files));
+                            var  objData={};
+                            objData.picUrl = data.data;
+                            addItem(objData);
+                        } else {
+                            alert(data.msg);
+                        }
+                        alert("上传成功")
+                    },
+                    error:function(data) {
+                        alert("上传失败")
+                    }
+                });
+            }
+
+            /**
              * 图片选择回调
              */
             function onFileUpload() {
                 console.log($('#file')[0].files[0]);
                 files.push($('#file')[0].files[0]);
-                upload($('#file')[0].files[0]);
+                uploadFn($('#file')[0].files[0]);
                 var reads = new FileReader();
                 reads.readAsDataURL($('#file')[0].files[0]);
                 reads.onload = function () {
@@ -387,39 +421,6 @@
                         onFileUpload()
                     });
                 };
-            }
-
-            /**
-             * 上传图片
-             */
-            function upload(picdata) {
-                var formData = new FormData();
-                formData.append('file', picdata);
-                $.ajax({
-                    url:postpicurl,
-                    type:"post",
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    success: function(data) {
-                        if (data.code == 0) {
-                            // $("#preview_photo").attr("src", data.filepath+data.filename);
-                            // $("#productImg").val(data.filename);
-                            picdata.url =  data.data;
-                            console.log(JSON.stringify(files));
-                            var  objData={};
-                            objData.picUrl = data.data;
-                            objData.schoolId = 1;
-                            addItem(objData);
-                        } else {
-                            alert(data.msg);
-                        }
-                        alert("上传成功")
-                    },
-                    error:function(data) {
-                        alert("上传失败")
-                    }
-                });
             }
 
             /**

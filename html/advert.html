@@ -61,21 +61,13 @@
 <!--    弹出窗的模板-->
     <script type="text/html" id="argSchemaTemplate">
         <form class="layui-form" action="">
-            <div class="layui-input-block">
+            <div class="layui-input-block" hidden>
                 <input class="layui-input" type="text"  name="id"  value="{{d.id}}" autocomplete="off" placeholder="请输入id" />
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">平台</label>
                 <div class="layui-input-block">
-<!--                    <select name="platform" lay-filter="aihao">-->
-<!--                        <option value=""></option>-->
-<!--                        <option value="0">PC</option>-->
-<!--                        <option value="1" >H5</option>-->
-<!--&lt;!&ndash;                        <option value="2">游戏</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="3">音乐</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="4">旅行</option>&ndash;&gt;-->
-<!--                    </select>-->
                     <input class="layui-input" type="text"  name="platform"  value="{{d.platform}}" autocomplete="off" placeholder="请输入平台" />
                 </div>
             </div>
@@ -208,7 +200,7 @@
 
 //监听提交
             form.on('submit(demo1)', function(data){
-                if (data.field.id)
+                if (data.field.id&&data.field.id!='undefined'&&data.field.id!='')
                 {
                     updateItem(data);
                 }else {
@@ -225,7 +217,7 @@
                 switch(obj.event){
                     case 'add':
                         layer.msg('添加');
-                        openlayer({});
+                        openlayer({platform: "", position: ""});
                         break;
                     case 'update':
                         if(data.length === 0){
@@ -255,11 +247,14 @@
                     ,layEvent = obj.event; //获得 lay-event 对应的值
                 if(layEvent === 'detail'){
                     layer.msg('查看操作');
+                    window.location.hash = '#/advertmanager.html';
+                    window.location.reload();
                 } else if(layEvent === 'del'){
                     layer.confirm('真的删除行么', function(index){
                         obj.del(); //删除对应行（tr）的DOM结构
                         layer.close(index);
                         //向服务端发送删除指令
+
                     });
                 } else if(layEvent === 'edit'){
                     layer.msg('编辑操作');
@@ -268,8 +263,8 @@
                     // window.location.href = window.location.protocol + '//' + window.location.host + '/#/advertmanager.html';
                     // $('#iframeParent').attr('src', 'html/advertmanager.html');
                     // window.location.reload();
-                    initRouter();
-
+                    // initRouter();
+                    openlayer(data)
                 }
             });
             /**

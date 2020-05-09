@@ -16,7 +16,7 @@
 </head>
 <body>
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>广告详情管理</legend>
+    <legend>内容管理</legend>
 </fieldset>
 
 <table class="layui-hide" id="test" lay-filter="testevent"></table>
@@ -33,24 +33,11 @@
     </div>
 </script>
 
-<!--adId: "1"-->
-<!--createTime: 1586857250000-->
-<!--endDate: 1586857117000-->
-<!--id: 3-->
-<!--platform: "pc"-->
-<!--position: "首页"-->
-<!--startDate: 1586857117000-->
-<!--status: "上线"-->
-<!--statusType: 0-->
-<!--title: "今日头条"-->
-<!--updateTime: 1586857250000-->
-<!--url: "http://www.baidu.com"-->
-
 <!--    弹出窗的模板-->
 <script type="text/html" id="argSchemaTemplate">
             <form class="layui-form" action="">
                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-                    <legend>添加广告</legend>
+                    <legend>发布文章</legend>
                 </fieldset>
 
                 <div class="layui-input-block" hidden>
@@ -58,60 +45,76 @@
                 </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">广告标题</label>
+                    <label class="layui-form-label">文章标题</label>
                     <div class="layui-input-block">
-                        <input class="layui-input" type="text" lay-verify="required"  name="title"  value="{{d.title}}" autocomplete="off" placeholder="请输入标题" />
+                        <input class="layui-input" type="text" lay-verify="required"  name="contentname"  value="{{d.contentname}}" autocomplete="off" placeholder="请输入标题" />
                     </div>
                 </div>
 
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文章描述</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" lay-verify="required"  name="contentdescription"  value="{{d.contentdescription}}" autocomplete="off" placeholder="请输入描述" />
+
+                    </div>
+                </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">发布状态</label>
+                    <label class="layui-form-label">tag标签</label>
                     <div class="layui-input-block">
-                        <input type="radio" name="status" value="1" title="上线" {{d.statusType ===0 ?'checked':''}}>
-                        <input type="radio" name="status" value="0" title="线下" {{d.statusType ===1 ?'checked':''}}>
+                        <input class="layui-input" type="text" lay-verify="required"  name="tag"  value="{{d.tag}}" autocomplete="off" placeholder="请输入标签" />
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">作者</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" lay-verify="required"  name="author"  value="{{d.author}}" autocomplete="off" placeholder="请输入作者" />
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分类目录</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" type="text" lay-verify="required"  name="categoryname"  value="{{d.categoryname}}" autocomplete="off" placeholder="请输入目录" />
                     </div>
                 </div>
 
                 <div class="layui-upload">
                     <button type="button" class="layui-btn" id="uploadId">上传图片</button>
                     <div class="layui-upload-list">
-                        <img class="layui-upload-img" id="uploadImgId" src="{{d.url}}">
+                        <img class="layui-upload-img" id="uploadImgId" src="{{d.picurl}}">
                         <p id="demoText"></p>
                     </div>
                 </div>
 
                 <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">日期范围</label>
-                        <div class="layui-input-inline">
-                            <input type="text" class="layui-input" name="startDate" id="test6" placeholder=" - " value="{{d.startDate}} - {{d.endDate}}">
-                        </div>
+                    <label class="layui-form-label">是否推荐</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="isrecommend" value="是" title="是" checked="">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">位置</label>
+                    <label class="layui-form-label">权重</label>
                     <div class="layui-input-block">
-                        <input class="layui-input" type="text"  name="position"  value="{{d.position}}" autocomplete="off" placeholder="请输入位置" />
+                        <input class="layui-input" type="text" lay-verify="required"  name="weight"  value="{{d.weight}}" autocomplete="off" placeholder="请输入权重" />
+                    </div>
+                </div>
+
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">内容</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" name="areatext">{{d.areatext}}</textarea>
                     </div>
                 </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">平台</label>
+                    <label class="layui-form-label"> 图片链接</label>
                     <div class="layui-input-block">
-                        <input class="layui-input" type="text"  name="platform"  value="{{d.platform}}" autocomplete="off" placeholder="请输入平台" />
+                        <input class="layui-input" type="text"  id="picUrl"  name="picurl"  value="{{d.picurl}}" autocomplete="off"  />
                     </div>
                 </div>
-
-
-                <div class="layui-form-item">
-                    <label class="layui-form-label">访问链接</label>
-                    <div class="layui-input-block">
-                        <input class="layui-input" type="text"  id="picUrl"  name="url"  value="{{d.url}}" autocomplete="off" placeholder="请输入访问链接" />
-                    </div>
-                </div>
-
 
                 <div class="layui-form-item">
                 <button type="submit" class="layui-btn" lay-submit="" lay-filter="submitadvertmanager">提交</button>
@@ -120,7 +123,7 @@
 
 </script>
 <script type="text/html" id="PicurlTpl">
-    <img class="layui-upload-img" id="uploadImgId21" src="{{d.url}}">
+    <img class="layui-upload-img" id="uploadImgId21" src="{{d.picurl}}">
 </script>
 <script type="text/javascript">
     layuiModules=['table','form', 'laydate','admin','upload'];
@@ -142,7 +145,7 @@
 
         table.render({
             elem: '#test'
-            ,url:api.advertDetail.all
+            ,url:api.contentmanager.all
             ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
             ,toolbar: '#toolbarDemo' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
             ,page:false
@@ -184,13 +187,16 @@
             }
             ,cols: [[
                 {type: 'checkbox', fixed: 'left'}
-                ,{field:'title', width:120, title: '广告标题'}
-                ,{field: 'url', title: '图片预览', width:120,templet: '#PicurlTpl'}
-                ,{field:'status', width:120, title: '状态'}
-                ,{field: 'startDate', title: '上线时间', width:120}
-                ,{field:'position', width:120, title: '位置'}
-                ,{field: 'url', title: '链接', width:120}
-                ,{field: 'platform', title: '平台', width:120}
+                ,{field:'id', width:120, title: 'ID'}
+                ,{field:'contentname', width:120, title: '文章标题'}
+                ,{field:'contentdescription', width:120, title: '文章描述'}
+                ,{field:'tag', width:120, title: 'tag标签'}
+                ,{field:'contentname', width:120, title: '分类目录'}
+                ,{field: 'picurl', title: '图片预览', width:120,templet: '#PicurlTpl'}
+                ,{field:'isrecommend', width:120, title: '推荐'}
+                ,{field: 'weight', title: '权重', width:120}
+                ,{field:'date', width:120, title: '日期'}
+                ,{field: 'author', title: '作者', width:120}
                 ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
             ]]
             , where: where
@@ -243,13 +249,14 @@
             switch(obj.event){
                 case 'addItem':
                     layer.msg('添加');
-                    openlayer({
-                        platform: "",
-                        position: "",
-                        status: "",
-                        statusType: "",
-                        title: "",
-                        url: ""});
+                    openlayer({areatext: "",
+                        author: "",
+                        categoryname: "",
+                        contentdescription: "",
+                        contentname: "",
+                        picurl: "",
+                        tag: "",
+                        weight: ""});
                     break;
             };
         });
@@ -274,11 +281,9 @@
 
         //新增和编辑同一个  试一试
         function addItem(data) {
-            var split = data.field.startDate.split(" ");
-            data.field.startDate = split[0];
-            data.field.endDate =  split[2];
+            data.field.isrecommend =data.field.isrecommend == "是"?1:0;
             admin.req({
-                url: api.advertDetail.add,
+                url: api.contentmanager.add,
                 data: data.field,
                 async: false,
                 success: function (res) {
@@ -292,11 +297,9 @@
         }
 
         function updateItem(data) {
-            var split = data.field.startDate.split(" ");
-            data.field.startDate = split[0];
-            data.field.endDate =  split[2];
+            data.field.isrecommend =data.field.isrecommend == "是"?1:0;
             admin.req({
-                url: api.advertDetail.update,
+                url: api.contentmanager.update,
                 data: data.field,
                 async: false,
                 success: function (res) {
@@ -341,6 +344,7 @@
                                 }
                                 //上传成功
                                 $('#picUrl').val(res.data);
+
                             }
                             ,error: function(){
                                 //演示失败状态，并实现重传
@@ -349,19 +353,6 @@
                                 demoText.find('.demo-reload').on('click', function(){
                                     uploadInst.upload();
                                 });
-                            }
-                        });
-
-                        //日期范围
-                        laydate.render({
-                            elem: '#test6'
-                            ,range: true
-                            ,done: function(value, date, endDate){
-                                console.log(value); //得到日期生成的值，如：2017-08-18
-                                console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
-                                console.log(endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
-                                $('#test6').val(date.year+"-"+date.month+"-"+date.date);
-                                $('#endDate').val(endDate.year+"-"+endDate.month+"-"+endDate.date);
                             }
                         });
 
