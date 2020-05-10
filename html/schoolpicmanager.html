@@ -365,7 +365,7 @@
             function onFileUpload() {
                 console.log($('#file')[0].files[0]);
                 files.push($('#file')[0].files[0]);
-                upload($('#file')[0].files[0]);
+                upload12($('#file')[0].files[0]);
                 var reads = new FileReader();
                 reads.readAsDataURL($('#file')[0].files[0]);
                 reads.onload = function () {
@@ -392,7 +392,7 @@
             /**
              * 上传图片
              */
-            function upload(picdata) {
+            function upload12(picdata) {
                 var formData = new FormData();
                 formData.append('file', picdata);
                 $.ajax({

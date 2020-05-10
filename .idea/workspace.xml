@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3369d3e4-2083-4c3e-91b6-a8560f923aae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/contentmanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/honormanager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/teachermanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/advert.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/advert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/advertmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/advertmanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/schoolpicmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/schoolpicmanager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/trackmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/trackmanager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,11 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="551">
               <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -56,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/advert.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="219" column="33" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="33" />
+            <state relative-caret-position="85">
+              <caret line="218" column="40" lean-forward="true" selection-start-line="218" selection-start-column="40" selection-end-line="218" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -68,17 +59,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="1026">
               <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state relative-caret-position="125">
+              <caret line="394" column="40" lean-forward="true" selection-start-line="394" selection-start-column="40" selection-end-line="394" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
               </folding>
@@ -89,20 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/honormanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
+            <state relative-caret-position="1406">
               <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="125">
+              <caret line="327" column="56" lean-forward="true" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -110,11 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/contentmanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="4807">
               <caret line="253" column="41" selection-start-line="253" selection-start-column="41" selection-end-line="253" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -122,11 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/teachermanager.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="4009">
               <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+            <state relative-caret-position="171">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -161,11 +143,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>schoolPicmanager</find>
       <find>admin</find>
       <find>picUrls</find>
       <find>postpicurl</find>
-      <find>upload</find>
       <find>upload($('#file')[0].files[0]);</find>
       <find>layui-hide</find>
       <find>table</find>
@@ -191,6 +171,8 @@
       <find>open</find>
       <find>if (data.field.id</find>
       <find>openlayer</find>
+      <find>upload</find>
+      <find>upload($('#file')[0].files[0]);</find>
     </findStrings>
     <replaceStrings>
       <replace>19892000</replace>
@@ -207,14 +189,14 @@
         <option value="$PROJECT_DIR$/layui/lay/modules/upload.js" />
         <option value="$PROJECT_DIR$/html/schoolmanager.html" />
         <option value="$PROJECT_DIR$/html/honormanager.html" />
-        <option value="$PROJECT_DIR$/js/api.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/html/schoolpicmanager.html" />
         <option value="$PROJECT_DIR$/html/advert.html" />
         <option value="$PROJECT_DIR$/html/trackmanager.html" />
         <option value="$PROJECT_DIR$/html/teachermanager.html" />
         <option value="$PROJECT_DIR$/html/contentmanager.html" />
         <option value="$PROJECT_DIR$/html/advertmanager.html" />
+        <option value="$PROJECT_DIR$/js/api.js" />
+        <option value="$PROJECT_DIR$/html/schoolpicmanager.html" />
       </list>
     </option>
   </component>
@@ -233,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,7 +242,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -355,7 +337,8 @@
       <workItem from="1588860767572" duration="1468000" />
       <workItem from="1588862760207" duration="1510000" />
       <workItem from="1588943683314" duration="5846000" />
-      <workItem from="1589031441122" duration="6752000" />
+      <workItem from="1589031441122" duration="10551000" />
+      <workItem from="1589067586156" duration="3187000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1557482738453</created>
@@ -546,17 +529,24 @@
       <option name="project" value="LOCAL" />
       <updated>1588428303365</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://github.com/whywuzeng/layuiAdmin&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1589040476309</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1589040476309</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88763000" />
+    <option name="totallyTimeSpent" value="95749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59692895" visible="true" weight="0.3616734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59692895" visible="true" weight="0.3677463" />
       <window_info id="Structure" order="1" sideWeight="0.40307102" side_tool="true" weight="0.25775978" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -572,12 +562,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18597561" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932525" visible="true" weight="0.2027439" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006748" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932525" weight="0.25762194" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3292683" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.23628049" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.5777439" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3292683" />
       <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.27896342" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.3109756" />
@@ -751,6 +741,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/honormanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/contentmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4807">
+          <caret line="253" column="41" selection-start-line="253" selection-start-column="41" selection-end-line="253" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/teachermanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4009">
+          <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/layui/lay/modules/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
@@ -758,71 +783,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/honormanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/trackmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/teachermanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/contentmanager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="253" column="41" selection-start-line="253" selection-start-column="41" selection-end-line="253" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/advert.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="219" column="33" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="218" column="40" lean-forward="true" selection-start-line="218" selection-start-column="40" selection-end-line="218" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -831,8 +802,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/advertmanager.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        <state relative-caret-position="125">
+          <caret line="327" column="56" lean-forward="true" selection-start-line="327" selection-start-column="56" selection-end-line="327" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/schoolpicmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="394" column="40" lean-forward="true" selection-start-line="394" selection-start-column="40" selection-end-line="394" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>

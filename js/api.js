@@ -1,6 +1,6 @@
 layui.define(function (exports) {
 
-    var HOSTAPI = "127.0.0.1:8081";
+    var HOSTAPI = "94.191.109.74:8081";
 
     var bossUrl = new REQUEST().BOSSURL;
 
