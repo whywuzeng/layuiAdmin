@@ -2,6 +2,8 @@ layui.define(function (exports) {
 
     var HOSTAPI = "94.191.109.74:8081";
 
+    // var HOSTAPI = "127.0.0.1:8081";
+
     var bossUrl = new REQUEST().BOSSURL;
 
     exports('api', {
@@ -63,6 +65,18 @@ layui.define(function (exports) {
             add: bossUrl + '/content/manager/add',
             delete: bossUrl + '/content/manager/delete',
             update: bossUrl + '/content/manager/update',
+        },
+        friendurl:{
+            all: bossUrl + '/friend/all',
+            add: bossUrl + '/friend/add',
+            delete: bossUrl + '/friend/delete',
+            update: bossUrl + '/friend/update',
+        },
+        tdkmanager:{
+            all: bossUrl + '/tdkmanager/all',
+            add: bossUrl + '/tdkmanager/add',
+            delete: bossUrl + '/tdkmanager/delete',
+            update: bossUrl + '/tdkmanager/update',
         },
     });
 

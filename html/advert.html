@@ -27,20 +27,20 @@
                         <input type="radio" name="pingtai" value="h5" title="h5">
                 </div>
 
-                <label class="layui-form-label">页面</label>
-                 <div class="layui-input-inline">
-                     <select name="interest" lay-filter="aihao">
-                         <option value=""></option>
-                         <option value="0">写作</option>
-                         <option value="1" selected="">阅读</option>
-                         <option value="2">游戏</option>
-                         <option value="3">音乐</option>
-                         <option value="4">旅行</option>
-                     </select>
-                 </div>
+<!--                <label class="layui-form-label">页面</label>-->
+<!--                 <div class="layui-input-inline">-->
+<!--                     <select name="interest" lay-filter="aihao">-->
+<!--                         <option value=""></option>-->
+<!--                         <option value="0">写作</option>-->
+<!--                         <option value="1" selected="">阅读</option>-->
+<!--                         <option value="2">游戏</option>-->
+<!--                         <option value="3">音乐</option>-->
+<!--                         <option value="4">旅行</option>-->
+<!--                     </select>-->
+<!--                 </div>-->
 
                 <div class="layui-input-inline">
-                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">查询</button>
+                    <button type="submit" class="layui-btn"  id="demoSelect1" lay-filter="demoSelect1">查询</button>
                 </div>
             </div>
 
@@ -210,6 +210,10 @@
                 return false;
             });
 
+            $('#demoSelect1').click(function () {
+                layui.table.reload('test',{where:where});
+            });
+
             //监听头工具栏事件
             table.on('toolbar(testevent)', function(obj){
                 var checkStatus = table.checkStatus(obj.config.id)
@@ -247,14 +251,42 @@
                     ,layEvent = obj.event; //获得 lay-event 对应的值
                 if(layEvent === 'detail'){
                     layer.msg('查看操作');
-                    window.location.hash = '#/advertmanager.html';
-                    window.location.reload();
+                    layui.data('qw_advert_id', {
+                        key: 'adId',
+                        value: data.id
+                    });
+                    var parents = parent.parent;
+                    var content1 =  'html/advertmanager.html';
+                    parents.layer.open({
+                        type: 2,
+                        title: '查看详情',
+                        shade: 0.6,
+                        area: ['1000px', '660px'],
+                        maxmin: false,
+                        content: content1,
+                        zIndex: layer.zIndex,
+                        success: function(layero) {
+                            // layer.setTop(layero);
+                        }
+                    });
                 } else if(layEvent === 'del'){
                     layer.confirm('真的删除行么', function(index){
                         obj.del(); //删除对应行（tr）的DOM结构
                         layer.close(index);
                         //向服务端发送删除指令
 
+                        admin.req({
+                            url: `${api.advertService.delete}?id=${obj.data.id}`,
+                            contentType:'application/x-www-form-urlencoded',
+                            async: false,
+                            success: function (res) {
+                                // layui.util.renderTplView({tplId: 'sceneTemplate', tarId: 'sceneCodeDiv', data: res});
+                                // layui.form.render('select');
+                                layer.alert(JSON.stringify(res), {
+                                    title: '结果'
+                                })
+                            }
+                        });
                     });
                 } else if(layEvent === 'edit'){
                     layer.msg('编辑操作');

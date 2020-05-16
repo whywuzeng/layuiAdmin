@@ -54,21 +54,10 @@
                 </select>
             </div>
 
-<!--                <label class="layui-form-label">临近校区</label>-->
-<!--                <div class="layui-input-inline">-->
-<!--                    <select name="interest" lay-filter="aihao">-->
-<!--                        <option value=""></option>-->
-<!--                        <option value="0">写作</option>-->
-<!--                        <option value="1" selected="">阅读</option>-->
-<!--                        <option value="2">游戏</option>-->
-<!--                        <option value="3">音乐</option>-->
-<!--                        <option value="4">旅行</option>-->
-<!--                    </select>-->
-<!--                </div>-->
             </div>
         <div class="layui-form-item">
             <div class="layui-input-inline">
-                <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">查询</button>
+                <button type="submit" class="layui-btn"  id="demoSelect1"  lay-filter="demoSelect1">查询</button>
             </div>
 
         </div>
@@ -268,6 +257,11 @@
                 return false;
             });
 
+
+            $('#demoSelect1').click(function () {
+                layui.table.reload('test',{where:where});
+            });
+
             //监听头工具栏事件
             table.on('toolbar(testevent)', function(obj){
                 var checkStatus = table.checkStatus(obj.config.id)
@@ -297,6 +291,18 @@
                         obj.del(); //删除对应行（tr）的DOM结构
                         layer.close(index);
                         //向服务端发送删除指令
+                        admin.req({
+                            url: `${api.trackmanager.delete}?id=${obj.data.id}`,
+                            contentType:'application/x-www-form-urlencoded',
+                            async: false,
+                            success: function (res) {
+                                // layui.util.renderTplView({tplId: 'sceneTemplate', tarId: 'sceneCodeDiv', data: res});
+                                // layui.form.render('select');
+                                layer.alert(JSON.stringify(res), {
+                                    title: '结果'
+                                })
+                            }
+                        });
                     });
                 } else if(layEvent === 'edit'){
                     layer.msg('编辑操作');

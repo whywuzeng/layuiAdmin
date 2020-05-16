@@ -16,22 +16,48 @@
 </head>
 <body>
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-        <legend>校区管理</legend>
+        <legend>TDK管理</legend>
     </fieldset>
+
     <form class="layui-form" action="">
         <div class="layui-form-item">
             <div class="layui-inline">
+                <label class="layui-form-label">页面</label>
                 <div class="layui-input-inline">
-                    <button type="submit" class="layui-btn" id="demoSelect1" lay-filter="demo1">查询</button>
+                    <input type="text" name="position"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
+            <div class="layui-inline">
+                <label class="layui-form-label">关键字</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">title</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
         </div>
 
+        <div class="layui-form-item">
+            <div class="layui-input-inline">
+                <button type="submit" class="layui-btn"  id="demoSelect1"  lay-filter="demoSelect1">查询</button>
+            </div>
+
+        </div>
     </form>
 
-
     <table class="layui-hide" id="test" lay-filter="testevent"></table>
+
+<!--    模板scripty-->
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
 
     <script type="text/html" id="toolbarDemo">
         <div class="layui-btn-container">
@@ -40,48 +66,56 @@
         </div>
     </script>
 
-<!--    模板scripty-->
-    <script type="text/html" id="barDemo">
-        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">图片管理</a>
-    </script>
-
 <!--    弹出窗的模板-->
     <script type="text/html" id="argSchemaTemplate">
         <form class="layui-form" action="">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>添加</legend>
+            </fieldset>
+
             <div class="layui-input-block" hidden>
                 <input class="layui-input" type="text"  name="id"  value="{{d.id}}" autocomplete="off" placeholder="请输入id" />
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">校区名称</label>
-                <div class="layui-input-block">
-                    <input class="layui-input" type="text"  name="schoolName"  value="{{d.schoolName}}" autocomplete="off" placeholder="请输入校区名称" />
+                <div class="layui-inline">
+                    <label class="layui-form-label">页面</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="position"  autocomplete="off" class="layui-input" value="{{d.position}}" placeholder="请输入页面" />
+                    </div>
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">校区位置</label>
-                <div class="layui-input-block">
-                    <input class="layui-input" type="text"  name="schoolPosition"  value="{{d.schoolPosition}}" autocomplete="off" placeholder="请输入校区位置" />
+                <div class="layui-inline">
+                    <label class="layui-form-label">title</label>
+                    <div class="layui-input-inline">
+                        <input  type="text" name="title"  autocomplete="off" class="layui-input" value="{{d.title}}" placeholder="请输入title" />
+                    </div>
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">联系方式</label>
-                <div class="layui-input-block">
-                    <input class="layui-input" type="text"  name="phoneNum"  value="{{d.phoneNum}}" autocomplete="off" placeholder="请输入联系方式" />
+                <div class="layui-inline">
+                    <label class="layui-form-label">keyword</label>
+                    <div class="layui-input-inline">
+                        <input  type="text" name="keyword"  autocomplete="off" class="layui-input" value="{{d.keyword}}" placeholder="请输入keyword" />
+                    </div>
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">排序</label>
-                <div class="layui-input-block">
-                    <input class="layui-input" type="text"  name="sortNumber"  value="{{d.sortNumber}}" autocomplete="off" placeholder="请输入排序" />
+                <div class="layui-inline">
+                    <label class="layui-form-label">description</label>
+                    <div class="layui-input-inline">
+                        <input  type="text" name="description"  autocomplete="off" class="layui-input" value="{{d.description}}" placeholder="请输入description" />
+                    </div>
                 </div>
             </div>
 
+            <div class="layui-form-item">
+
+            </div>
 
             <div class="layui-form-item">
             <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">提交</button>
@@ -90,7 +124,7 @@
 
     </script>
     <script type="text/javascript">
-        layuiModules=['table','form', 'laydate','admin','laytpl'];
+        layuiModules=['table','form', 'laydate','admin','upload'];
 
         function mounted() {
             var form = layui.form
@@ -100,15 +134,19 @@
             var $ = layui.$;
             var api =  layui.api;
             var admin = layui.admin;
+            var upload = layui.upload;
 
             var where = {
                 pageNo: 1,
-                pageSize: 10
+                pageSize: 10,
+                position:'',
+                title:'',
+                keyword:'',
             };
 
             table.render({
                 elem: '#test'
-                ,url:api.schoolmanager.all
+                ,url:api.tdkmanager.all
                 ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
                 ,toolbar: '#toolbarDemo' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
                 ,page:false
@@ -137,10 +175,11 @@
                     }
                 ,cols: [[
                     {type: 'checkbox', fixed: 'left'}
-                    ,{field:'schoolName', width:120, title: '校区名字'}
-                    ,{field:'schoolPosition', width:120, title: '校区位置'}
-                    ,{field:'phoneNum', width:120, title: '电话号码'}
-                    ,{field: 'sortNumber', title: '排序', width:120}
+                    ,{field:'id', width:120, title: 'ID'}
+                    ,{field:'position', width:150, title: '页面'}
+                    ,{field:'title', width:120, title: 'title'}
+                    ,{field: 'description', title: 'description', width:80}
+                    ,{field: 'keyword', title: 'keyword', width:80}
                     ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
                 ]]
                 , where: where
@@ -172,10 +211,11 @@
                     }
                 });
             }
+
             //新增和编辑同一个  试一试
             function addItem(data) {
                 admin.req({
-                    url: api.schoolmanager.add,
+                    url: api.tdkmanager.add,
                     data: data.field,
                     async: false,
                     success: function (res) {
@@ -190,7 +230,7 @@
 
             function updateItem(data) {
                 admin.req({
-                    url: api.schoolmanager.update,
+                    url: api.tdkmanager.update,
                     data: data.field,
                     async: false,
                     success: function (res) {
@@ -211,12 +251,12 @@
                 }else {
                     addItem(data);
                 }
-
                 return false;
             });
 
 
             $('#demoSelect1').click(function () {
+                where.position = $("[name='position']").val();
                 layui.table.reload('test',{where:where});
             });
 
@@ -227,16 +267,14 @@
                 switch(obj.event){
                     case 'addItem':
                         layer.msg('添加');
-                        openlayer({
-                            phoneNum: '',
-                            schoolName: "",
-                            schoolPosition: "",
-                            sortNumber: '',
-                            });
+                        openlayer({position: "",
+                            title: "",
+                            description: '',
+                            keyword: ''});
                         break;
-                    case 'rangeDelete':
-                        //批量删除
-                        break;
+                     case 'rangeDelete':
+                         //批量删除
+                         break;
                     case 'rangeExport':
 
                         break;
@@ -249,34 +287,13 @@
                     ,layEvent = obj.event; //获得 lay-event 对应的值
                 if(layEvent === 'detail'){
                     layer.msg('查看操作');
-                    layui.data('qw_schoolmanager_id', {
-                        key: 'schoolId',
-                        value: data.id
-                    });
-
-                    var parents = parent.parent;
-                    var content1 =  'html/schoolpicmanager.html';
-                    parents.layer.open({
-                        type: 2,
-                        title: '通道详情',
-                        shade: 0.6,
-                        area: ['1000px', '660px'],
-                        maxmin: false,
-                        content: content1,
-                        zIndex: layer.zIndex,
-                        success: function(layero) {
-                            // layer.setTop(layero);
-                        }
-                    });
-
-                    //图片管理
                 } else if(layEvent === 'del'){
                     layer.confirm('真的删除行么', function(index){
                         obj.del(); //删除对应行（tr）的DOM结构
                         layer.close(index);
                         //向服务端发送删除指令
                         admin.req({
-                            url: `${api.schoolmanager.delete}?id=${obj.data.id}`,
+                            url: `${api.tdkmanager.delete}?id=${obj.data.id}`,
                             contentType:'application/x-www-form-urlencoded',
                             async: false,
                             success: function (res) {
@@ -287,39 +304,12 @@
                                 })
                             }
                         });
-
                     });
                 } else if(layEvent === 'edit'){
                     layer.msg('编辑操作');
                     openlayer(data)
-
                 }
             });
-            /**
-             * 类Vue路由设计
-             */
-            function initRouter() {
-                var url = '#/advertmanager.html';
-                var router;
-                if (url.indexOf("#/") > -1) {
-                    router = url.substring(url.indexOf('#/') + 2);
-                    if (router === '') {
-                        router = 'index.html';
-                    }
-                    $('#iframeParent').attr('src', 'html/' + router);
-                } else {
-                    $('#iframeParent').attr('src', 'html/index.html');
-                    history.replaceState(null, null, '#/');
-                }
-                //地址栏修改不刷新的解决方案
-                // $('a').click(function () {
-                //     if ($(this).attr('href')) {
-                //         window.location.href = $(this).attr('href');
-                //         window.location.reload();
-                //     }
-                // });
-            }
-
             function openlayer(data) {
                 var templet = $('#argSchemaTemplate').html();
 
@@ -328,7 +318,7 @@
                     //在这里面输入任何合法的js语句
                     layer.open({
                         type: 1 //Page层类型
-                        ,area: ['500px', '500px']
+                        ,area: ['500px', '600px']
                         ,title: '添加'
                         ,shade: 0.6 //遮罩透明度
                         ,maxmin: false //允许全屏最小化

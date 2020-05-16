@@ -22,7 +22,7 @@
         <div class="layui-form-item">
             <div class="layui-inline">
                 <div class="layui-input-inline">
-                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">查询</button>
+                    <button type="submit" class="layui-btn" id="demoSelect1" lay-filter="demo1">查询</button>
                 </div>
             </div>
 
@@ -208,6 +208,10 @@
                 });
             }
 
+            $('#demoSelect1').click(function () {
+                layui.table.reload('test',{where:where});
+            });
+
             //监听提交
             form.on('submit(demo1)', function(data){
                 if (data.field.id&&data.field.id!='undefined'&&data.field.id!='')
@@ -279,6 +283,18 @@
                         obj.del(); //删除对应行（tr）的DOM结构
                         layer.close(index);
                         //向服务端发送删除指令
+                        admin.req({
+                            url: `${api.honormanager.delete}?id=${obj.data.id}`,
+                            contentType:'application/x-www-form-urlencoded',
+                            async: false,
+                            success: function (res) {
+                                // layui.util.renderTplView({tplId: 'sceneTemplate', tarId: 'sceneCodeDiv', data: res});
+                                // layui.form.render('select');
+                                layer.alert(JSON.stringify(res), {
+                                    title: '结果'
+                                })
+                            }
+                        });
                     });
                 } else if(layEvent === 'edit'){
                     layer.msg('编辑操作');

@@ -104,10 +104,12 @@
 
             postpicurl = api.advertDetail.upload;
 
+            var schoolId = layui.data('qw_schoolmanager_id').schoolId;
+
             var where = {
                 pageNo: 1,
                 pageSize: 10,
-                schoolId:1
+                schoolId:schoolId?schoolId:-1
             };
 
             table.render({
@@ -209,6 +211,7 @@
             form.on('submit(demo1)', function(data){
                 if (data.field.id&&data.field.id!='undefined'&&data.field.id!='')
                 {
+                    data.field.schoolId = schoolId;
                     updateItem(data);
                 }else {
                     // addItem(data);
@@ -243,7 +246,6 @@
                                         objectPost.picUrl=value.url;
                                     });
                                     picUrls.push(objectPost);
-                                    // addItem(picUrls);
                                 },
                                 btn2:function (index,layero) {
                                 }
@@ -343,6 +345,7 @@
                                      //上传成功
                                      $('#picUrl').val(res.data);
                                      data.picUrl = res.data;
+                                     data.schoolId = schoolId;
                                      updateItem(data)
                                  }
                                  ,error: function(){
@@ -409,7 +412,7 @@
                             console.log(JSON.stringify(files));
                             var  objData={};
                             objData.picUrl = data.data;
-                            objData.schoolId = 1;
+                            objData.schoolId = schoolId;
                             addItem(objData);
                         } else {
                             alert(data.msg);

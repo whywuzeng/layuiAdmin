@@ -33,18 +33,6 @@
     </div>
 </script>
 
-<!--adId: "1"-->
-<!--createTime: 1586857250000-->
-<!--endDate: 1586857117000-->
-<!--id: 3-->
-<!--platform: "pc"-->
-<!--position: "首页"-->
-<!--startDate: 1586857117000-->
-<!--status: "上线"-->
-<!--statusType: 0-->
-<!--title: "今日头条"-->
-<!--updateTime: 1586857250000-->
-<!--url: "http://www.baidu.com"-->
 
 <!--    弹出窗的模板-->
 <script type="text/html" id="argSchemaTemplate">
@@ -135,9 +123,12 @@
         var admin = layui.admin;
         var upload = layui.upload;
 
+        var schoolId = layui.data('qw_advert_id').adId;
+
         var where = {
             pageNo: 1,
-            pageSize: 10
+            pageSize: 10,
+            schoolId :schoolId?schoolId:-1
         };
 
         table.render({
@@ -148,30 +139,6 @@
             ,page:false
             ,contentType:"application/json"
             ,parseData:function(res){
-                // adId: "1"
-                // createTime: 1586857250000
-                // endDate: 1586857117000
-                // id: 3
-                // platform: "pc"
-                // position: "首页"
-                // startDate: 1586857117000
-                // status: "上线"
-                // statusType: 0
-                // title: "今日头条"
-                // updateTime: 1586857250000
-                // url: "http://www.baidu.com"
-
-                // 调整符合表单的数据格式
-                // $(res.result).each(function () {
-                //     var oneDate = this;
-                //     for(var p in oneDate){
-                //         if (p === 'row') {
-                //             for (var attr in oneDate[p]) {
-                //                 oneDate[attr] = oneDate[p][attr];
-                //             }
-                //         }
-                //     }
-                // });
                 return {
                     "code":0,
                     "msg":"",
@@ -277,6 +244,7 @@
             var split = data.field.startDate.split(" ");
             data.field.startDate = split[0];
             data.field.endDate =  split[2];
+            data.field.adId = schoolId;
             admin.req({
                 url: api.advertDetail.add,
                 data: data.field,
@@ -295,6 +263,7 @@
             var split = data.field.startDate.split(" ");
             data.field.startDate = split[0];
             data.field.endDate =  split[2];
+            data.field.adId = schoolId;
             admin.req({
                 url: api.advertDetail.update,
                 data: data.field,
